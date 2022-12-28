@@ -100,10 +100,6 @@ body {
 
 /* 2.end top header..................... */
 
-/* .bi {
-	padding: 1.5px;
-} */
-
 /* 3. carousel........................ */
 
 .carousel-content {
@@ -199,9 +195,14 @@ body {
 .highlight-iklan .card-body .btn {
 	border: 1px solid var(--child);
 	color: var(--child);
-	width: 60px;
+	width: 85px;
 	font-size: 10px;
 	font-weight: bold;
+}
+
+.highlight-iklan .card-body .btn-details {
+	width: 100%;
+	margin-top: 5px;
 }
 
 .highlight-iklan .card-body .btn-kategori {
