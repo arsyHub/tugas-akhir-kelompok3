@@ -1,138 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iklanin.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
-    <link rel="stylesheet" href="../Style/style.css" />
-    <link type="image/png" rel="icon" href="../Assets/ads.png" sizes="16x16" />
-</head>
-
-<body>
-    <!-- navbar============================================================= -->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../Assets/ads-white.png" alt="ads" /> Iklanin.com
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Iklanin.com</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+		/>
+		<link rel="stylesheet" href="../Style/style.css" />
+		<link type="image/png" rel="icon" href="../Assets/ads.png" sizes="16x16" />
+	</head>
+	<body>
+		<!-- navbar============================================================= -->
+		<nav class="navbar navbar-expand-lg">
+			<div class="container">
+				<a class="navbar-brand" href="../index.html">
+					<img src="../Assets/ads-white.png" alt="ads" /> Iklanin.com
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Cari iklan apapun disini..." aria-label="Search" />
-                    <button class="bi bi-search btn btn-search" type="submit"></button>
-                </form>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-geo-alt-fill"></i> Pilih Lokasi
-                        </a>
-                        <ul class="dropdown-menu">
-                            <input class="dropdown-item" placeholder="cari lokasi disini..." type="text" />
-                            <li><a class="dropdown-item" href="#">Lampung</a></li>
-                            <li><a class="dropdown-item" href="#">Jakarta</a></li>
-                        </ul>
-                    </li>
-                </ul>
-                <button type="button" class="btn btn-shop position-relative">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<form class="d-flex" role="search">
+						<input
+							class="form-control me-2"
+							type="search"
+							placeholder="Cari iklan apapun disini..."
+							aria-label="Search"
+						/>
+						<button class="bi bi-search btn btn-search" type="submit"></button>
+					</form>
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown">
+							<a
+								class="nav-link dropdown-toggle"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								<i class="bi bi-geo-alt-fill"></i> Pilih Lokasi
+							</a>
+							<ul class="dropdown-menu">
+								<input
+									class="dropdown-item"
+									placeholder="cari lokasi disini..."
+									type="text"
+								/>
+								<li><a class="dropdown-item" href="#">Lampung</a></li>
+								<li><a class="dropdown-item" href="#">Jakarta</a></li>
+							</ul>
+						</li>
+					</ul>
+					<button type="button" class="btn btn-shop position-relative">
 						<i class="bi bi-cart-plus-fill"></i>
-						<span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+						<span
+							class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+						>
 							99+
 							<span class="visually-hidden">unread messages</span>
 						</span>
 					</button>
-            </div>
-        </div>
-    </nav>
-    <!-- end navbar---------------------------------------------------- -->
+				</div>
+			</div>
+		</nav>
+		<!-- end navbar---------------------------------------------------- -->
 
-    <!-- breadcrumb========================================================= -->
+		<!-- breadcrumb========================================================= -->
 
-    <!-- end breadcrumb---------------------------------------------------- -->
+		<!-- end breadcrumb---------------------------------------------------- -->
 
-    <!-- Carousel-------------------------------------------------------- -->
-    <div class="container">
-        <ul class="bd-crump">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../index.html">Car</a></li>
-        </ul>
-        <div id="carouselExampleIndicators" class="carousel slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
+		<!-- Carousel-------------------------------------------------------- -->
+		<div class="container">
+				<ul class="bd-crump">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../index.html">Car</a></li>
+				</ul>
+				<div id="carouselExampleIndicators" class="carousel slide">
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="0"
+							class="active"
+							aria-current="true"
+							aria-label="Slide 1"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="1"
+							aria-label="Slide 2"
+						></button>
+						<button
+							type="button"
+							data-bs-target="#carouselExampleIndicators"
+							data-bs-slide-to="2"
+							aria-label="Slide 3"
+						></button>
+					</div>
 
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="img-car1 d-block w-100"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img-car2 d-block w-100"></div>
-                </div>
-                <div class="carousel-item">
-                    <div class="img-car3 d-block w-100"></div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
-        </div>
-    </div>
-    </div>
-    <!-- end carousel;---------------------------------------------------- -->
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<div class="img-car1 d-block w-100"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="img-car2 d-block w-100"></div>
+						</div>
+						<div class="carousel-item">
+							<div class="img-car3 d-block w-100"></div>
+						</div>
+					</div>
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselExampleIndicators"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- end carousel;---------------------------------------------------- -->
 
-    <!-- content========================================================= -->
+		<!-- content========================================================= -->
 
-    <div class="content">
-        <div class="container highlight-car">
-            <div class="card" style="width: 100%">
-                <div class="card-body">
-                    <div class="btn btn-warning">HIGHLIGHT</div>
-                    <h3 class="card-title">Toyota Rush 2016</h3>
-                    <h6 class="card-subtitle mb-2 text-muted">1.5 G Bensin-AT</h6>
-                    <p class="card-text"><img src="../Assets/fuel-gas.png" alt="fuel"> Bensin | 65.000 - 75.000 KM |
-                        <img src="../Assets/gear-automatic.png" alt="gear"> Automatic</p>
-                    <hr>
-                    <a href="#" class="btn btn-details"> Mobil Bergaransi</a>
-                    <a href="#" class="btn btn-details"> Jaminan uang Kembali</a>
-                    <a href="#" class="btn btn-details"> Gratis Perawatan</a>
-                </div>
-            </div>
-        </div>
-    </div>
+		<div class="content">
+			<div class="container highlight-car">
+				<div class="card" style="width: 100%">
+					<div class="card-body">
+						<div class="btn btn-warning">HIGHLIGHT</div>
+						<h3 class="card-title">Toyota Rush 2016</h3>
+						<h6 class="card-subtitle mb-2 text-muted">1.5 G Bensin-AT</h6>
+						<p class="card-text"><img src="../Assets/fuel-gas.png" alt="fuel"> Bensin | 65.000 - 75.000 KM | <img src="../Assets/gear-automatic.png" alt="gear"> Automatic</p> 
+						<hr>
+						<a href="#" class="btn btn-details"> Mobil Bergaransi</a>
+                        <a href="#" class="btn btn-details"> Jaminan uang Kembali</a>
+						<a href="#" class="btn btn-details"> Gratis Perawatan</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <div class="content">
-        <div class="container highlight-car">
-            <div class="card" style="width: 100%">
-                <div class="card-body">
-                    <h3 class="card-title">Deskripsi</h3>
-                    <hr>
-                    <p class="card-text">DF-MobilBagus.id-20221206-00002 TOYOTA RUSH 1.5 G BENSIN A/T 2016 Harga Rp. 159,000,000 Apa itu OLX Autos Authorized Dealer? OLX Autos Authorized Dealer adalah dealer rekanan yang terpercaya yang menawarkan mobil bekas berkualitas.
-                        Nikmati keamanan, kenyamanan, dan nilai lebih lainnya saat bertransaksi dengan kami. Kenapa Beli Dari OLX Autos Authorized Dealer? - Mobil Lulus Inspeksi dan sudah terverifikasi - GRATIS garansi mesin selama 30 hari* - Tim Sales
-                        profesional yang memudahkan proses pembelian mobil Anda. *Syarat & Ketentuan berlaku. Spesifikasi sebagai barikut : - Automatic Transmisi - Mesin halus dan terawat - Body/exterior mulus - Interior bersih dan wangi - Kilometer 66rb
-                        - Nopol B Genap - AC dingin - Kelistrikan berfungsi normal (Audio, lampu, Sensor-sensor dll) - Kaki-kaki senyap, suspensi nyaman - Ban tebal kondisi baik - Mobil lulus Inspeksi dengan lebih dari 200 item -Surat-surat dijamin KEABSAHANNYA
-                        Melayani Harga Cash, Kredit dan Tukar Tambah Untuk Pembelian Cash dan Kredit : Harga Cash Rp. 175,000,000 Harga Khusus Paket Kredit Rp. 159,000,000 Total DP : Rp. 35,9JT Angsuran : Rp. 4,661,800 (47 bulan)* Total DP : Rp. 36,9JT
-                        Angsuran : Rp. 4,014,200 (59 bulan)* Total DP : Rp. 41,9JT Angsuran : Rp. 4,140,000 (47 bulan)* Angsuran : Rp. 3,552,000 (59 bulan)* MOBILBAGUS.ID Jl Raya Pasar Jengkol no 106 Pengasinan Gunung Sindur Bogor BUKA SETIAP HARI OLX
-                        Autos pusatnya Mobil Bekas Berkualitas Mobil Lulus Inspeksi dan Bergaransi</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- end content---------------------------------------------------- -->
+		<div class="content">
+			<div class="container highlight-car">
+				<div class="card" style="width: 100%">
+					<div class="card-body">
+						<h3 class="card-title">Deskripsi</h3>
+						<hr>
+						<p class="card-text">Toyota Rush 2016 1.5 G Bensin-AT</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end content---------------------------------------------------- -->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
-    </script>
-</body>
-
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+			crossorigin="anonymous"
+		></script>
+	</body>
 </html>
